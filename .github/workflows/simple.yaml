@@ -3,22 +3,14 @@ name: shell commands
 on: [push]
 
 jobs:
-  run-shell-command:
-    run-on: ubuntu-18.04
+  run-shell-command
+    runs-on: ubuntu-18.04
     steps:
       - name: checkout
-        uses: actions/checkout@v3
+        uses: actions/ckeckout@3
       - name: echo string
         run: echo "Hello World"
-<<<<<<< HEAD
       - name: multi string
-        run:
+        run: |
           node -v
           npm -v
-=======
-     # - name: multi string
-       # run:
-      #    node -v
-       #   npm -v
->>>>>>> 7408387 (third commit)
-     
